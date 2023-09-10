@@ -41,7 +41,7 @@ function App() {
         <div className="lugar">
 
           <div className="tarefa">
-            <p id='func'>Manutenção de Hardware e Dev. Web</p>
+            <p id='func'>Montagem e manutenção de computadores e Dev. Web</p>
             <p id='contrato'>Estagiário</p>  
           </div>
 
