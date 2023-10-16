@@ -2,6 +2,7 @@
 import Header from './components/Header'
 import { BsLink45Deg, BsGithub, BsCalendar3 } from 'react-icons/bs'
 import Footer from './components/Footer'
+import Carousel from 'react-elastic-carousel';
 
 function App() {
   
@@ -33,7 +34,7 @@ function App() {
       
       <div className="sobre_mim">
         <h1>Sobre mim</h1>
-        <p id='perfil'>Sou um desenvolvedor apaixonado por tecnologia. Sempre buscando aperfeiçoamento e aprendendo coisas novas para conseguir me tornar um desenvolvedor melhor a cada dia. Estou a 2 anos no mundo da programação e ja trabalhei com JavaScript Node.JS, React, MySQL, Sql Server, HTML5 e CSS3. Meu objetivo é atuar como desenvolvedor web.</p>
+        <p id='perfil'>Sou um desenvolvedor apaixonado por tecnologia. Sempre buscando aperfeiçoamento e aprendendo coisas novas para conseguir me tornar um desenvolvedor melhor a cada dia. Estou a 2 anos no mundo da programação e ja trabalhei com JavaScript, Typescript, Node.JS, React, MySQL, Sql Server, HTML5 e CSS3. Meu objetivo é atuar como desenvolvedor web.</p>
       </div>
 
       <div className="experiencia_trab">
@@ -123,6 +124,23 @@ function App() {
       </div>
 
       <div className="cards">
+
+        <Carousel className="carrousel" itemsToShow={2}>
+
+        <div className="card">
+          <div className="imagem"> <img src="restapi.png" alt="" /> </div>
+          <div className="titulo_projeto"> CRUD API  </div>
+          <p className='desc_projeto'> Neste projeto foi feito um CRUD com typescript e node.js. Temos opções de criar, deletar, atualizar e listar usuários.  </p>
+          <p className='stacks'><span> Tecnologias usadas: </span> Prisma, sqlite e POO. </p>
+
+          <div className="links_projeto center">
+
+            <div className="repo">
+              <a target='_blank' href='https://github.com/igormtt/CRUD-typescript-POO' rel="noreferrer"> <BsGithub /> Repositório </a>
+            </div>
+            
+          </div>
+        </div>
         
         <div className="card">
           <div className="imagem"> <img src="weather-app.png" alt="" /> </div>
@@ -160,7 +178,47 @@ function App() {
             </div>
             
           </div>
-        </div>      
+        </div>
+
+        <div className="card">
+          <div className="imagem"> <img src="advicesProject.png" alt="" /> </div>
+          <div className="titulo_projeto"> Advices </div>
+          <p className='desc_projeto'> Este é um projeto feito em React que gera diversos conselhos interessantes, que vem de uma API. </p>
+          <p className='stacks'><span> Tecnologias usadas: </span> React, HTML, JavaScript, CSS. </p>
+
+          <div className="links_projeto">
+            
+            <div className="preview">
+              <a target='_blank' href='https://advices-i4o7qrj7v-igormtt.vercel.app' rel="noreferrer"> <BsLink45Deg /> Projeto no ar </a>
+            </div>
+
+            <div className="repo">
+              <a target='_blank' href='https://github.com/igormtt/advices' rel="noreferrer"> <BsGithub /> Repositório </a>
+            </div>
+            
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="imagem"> <img src="ToDoProject.png" alt="" /> </div>
+          <div className="titulo_projeto"> To-Do app </div>
+          <p className='desc_projeto'> Este é um projeto feito em React, nele podemos criar tarefas para fazer, marcar as concluidas ou exlcuir. </p>
+          <p className='stacks'><span> Tecnologias usadas: </span> React, HTML, JavaScript, CSS. </p>
+
+          <div className="links_projeto">
+            
+            <div className="preview">
+              <a target='_blank' href='https://to-do-react-sooty.vercel.app' rel="noreferrer"> <BsLink45Deg /> Projeto no ar </a>
+            </div>
+
+            <div className="repo">
+              <a target='_blank' href='https://github.com/igormtt/to-do-react' rel="noreferrer"> <BsGithub /> Repositório </a>
+            </div>
+            
+          </div>
+        </div>       
+
+        </Carousel>
         
       </div>
 
