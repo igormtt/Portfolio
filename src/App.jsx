@@ -181,25 +181,6 @@ function App() {
         </div>
 
         <div className="card">
-          <div className="imagem"> <img src="advicesProject.png" alt="" /> </div>
-          <div className="titulo_projeto"> Advices </div>
-          <p className='desc_projeto'> Este é um projeto feito em React que gera diversos conselhos interessantes, que vem de uma API. </p>
-          <p className='stacks'><span> Tecnologias usadas: </span> React, HTML, JavaScript, CSS. </p>
-
-          <div className="links_projeto">
-            
-            <div className="preview">
-              <a target='_blank' href='https://advices-i4o7qrj7v-igormtt.vercel.app' rel="noreferrer"> <BsLink45Deg /> Projeto no ar </a>
-            </div>
-
-            <div className="repo">
-              <a target='_blank' href='https://github.com/igormtt/advices' rel="noreferrer"> <BsGithub /> Repositório </a>
-            </div>
-            
-          </div>
-        </div>
-
-        <div className="card">
           <div className="imagem"> <img src="ToDoProject.png" alt="" /> </div>
           <div className="titulo_projeto"> To-Do app </div>
           <p className='desc_projeto'> Este é um projeto feito em React, nele podemos criar tarefas para fazer, marcar as concluidas ou exlcuir. </p>
